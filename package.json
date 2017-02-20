@@ -1,10 +1,9 @@
 {
   "name": "atom-emacs-calc",
   "main": "./lib/atom-emacs-calc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Emacs Lisp style interactive calculator",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "atom-emacs-calc:calc"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
