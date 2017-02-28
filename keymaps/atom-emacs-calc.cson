@@ -6,5 +6,7 @@
 # the root workspace element.
 
 # For more detailed documentation see
-"atom-workspace atom-text-editor[data-grammar='text plain null-grammar']":
+".platform-linux atom-workspace atom-text-editor[data-grammar='text plain null-grammar']:not([mini]),
+ .platform-win32 atom-workspace atom-text-editor[data-grammar='text plain null-grammar']:not([mini]),
+ .platform-darwin atom-workspace atom-text-editor[data-grammar='text plain null-grammar']:not([mini])":
   'ctrl-j': 'atom-emacs-calc:calc'
