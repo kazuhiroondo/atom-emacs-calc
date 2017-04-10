@@ -10,11 +10,13 @@ class BasicMath extends CalcModuleBase
       when '/' then current /= operand
       when '%' then current %= operand
       when '^' then current = Math.pow(current, operand)
+      when '&' then current &= operand
+      when '|' then current |= operand
     return current
 
   tryMath: (statement) ->
       result = null
-      matches = /([\+\-\*\/\%\^])\s+([\-\+\.\w\s]+)/.exec(statement)
+      matches = /([\+\-\*\/\%\^\&\|])\s+([\-\+\.\w\s]+)/.exec(statement)
       if (!!matches)
         vals = matches[2].split(/\s+/)
         for val in vals
